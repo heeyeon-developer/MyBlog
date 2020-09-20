@@ -8,6 +8,7 @@ import cors from 'cors'
 //routes
 import postRoutes from './routes/api/post'
 import userRoutes from './routes/api/user'
+import authRoutes from "./routes/api/auth";
 import morgan from 'morgan'
 
 const app = express()
@@ -35,8 +36,9 @@ mongoose
 
 //처음 들어온 신호를 모두 받아들이기
 //use routes
-//app.use('/');
+// app.use('/');
 app.use('/api/post',postRoutes)
 app.use('/api/user',userRoutes)
+app.use("/api/auth",authRoutes);
 
 export default app;
