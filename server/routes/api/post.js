@@ -2,6 +2,7 @@ import express from 'express'
 
 //model
 import Post from '../../models/post'
+import auth from '../../middleware/auth'
 
 const router = express.Router()
 //모든 포스트를 검색하는 라우터 작성
@@ -14,7 +15,7 @@ router.get('/', async(req, res) => {
 
 })
 
-router.post('/', async(req,res,next) => {
+router.post('/', auth, async(req,res,next) => {
     try{
         console.log(req,"req")
         //요청을 보낼때 나누어서 쓰지 않기 위해 정의하는 js문법
