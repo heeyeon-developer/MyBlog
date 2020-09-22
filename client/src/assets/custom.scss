@@ -5,3 +5,13 @@
     background: #a7d0e8;
     color: #fff;
 }
+
+#page-header{
+    height: 200px;
+    background: rgb(137, 230, 137);
+    //backgour-position: 54% 50%; //가로 세로 위치
+    background-attachment: fixed;
+    color: white;
+    border-bottom: 1px solid lightgray;
+    padding-top: 60px;
+}
