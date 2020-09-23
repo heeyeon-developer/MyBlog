@@ -17,7 +17,6 @@ const App = () => {
       <ConnectedRouter history={history}>
         <MyRouter />
       </ConnectedRouter>
-
     </Provider>
   );
 }

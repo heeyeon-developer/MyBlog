@@ -17,7 +17,7 @@ const PostSchema = new mongoose.Schema({
     },
     fileUrl: {
         type: String,
-        default: 'httls://source.unslash.com/random/301x201',   //파일의 기본이미지를 넣기 위해 기본값으로 넣은것
+        default: 'https://source.unslash.com/random/301x201',   //파일의 기본이미지를 넣기 위해 기본값으로 넣은것
     },
     category: {
         type: mongoose.Schema.Types.ObjectId,
