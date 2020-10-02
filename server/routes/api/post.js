@@ -3,7 +3,7 @@ import express from 'express'
 //model
 import Post from '../../models/post'
 import auth from '../../middleware/auth'
-
+import "@babel/polyfill"
 const router = express.Router()
 //모든 포스트를 검색하는 라우터 작성
 //api/post  //req는 요청    res는 요청에 대한 응답 - 마지막에 꼭 응당이 있어야 성공으로 알아 듣는다
